@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+
+	int Num = 1;
+	int ON[5] = { 0,0,0,0,0 };
+	string food[5];
+
+	cout << "what your favorite foods " << endl;
+	//for(int i=0;i<5;i++)
+	cin >> food[0];
+	cin >> food[1];
+	cin >> food[2];
+	cin >> food[3];
+	cin >> food[4];
+	//
+
+	while (Num != 0) {
+		cout << food[0] << endl;
+		cout << food[1] << endl;
+		cout << food[2] << endl;
+		cout << food[3] << endl;
+		cout << food[4] << endl;
+		cout << "Type number of the food you want to vote on" << endl;
+		cin >> Num;
+		if (Num != 0) {
+			ON[Num] += 1;
+		}
+	}
+	for (int i = 0; i < 5; i++) {
+		cout << food[i] << " " << ON[i] << endl;
+	}
+	//final votes
+}
+
+
+
+
+
+
+//for (int i = 0; i < 5; i++)
+//{
+//cin >> ON[i];
+//}
